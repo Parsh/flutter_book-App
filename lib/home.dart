@@ -9,15 +9,15 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
 
     final appBar = new AppBar(
-    elevation: .5,
+    elevation: 4.0,
     leading: new IconButton(
-      icon: Icon(Icons.menu),
+      icon: new Icon(Icons.menu),
       onPressed: () {},
       ),
     title: new Text("Design Books"),
     actions: <Widget>[
       new IconButton(
-      icon: Icon(Icons.search),
+      icon: new Icon(Icons.search),
       onPressed: () {},
       ),
     ],
@@ -28,6 +28,13 @@ class Home extends StatelessWidget {
     child: new Material(
       elevation: 15.0,
       shadowColor: Colors.yellow.shade900,
+      // child: new Ink.image(
+      //  image: new AssetImage(book.image),
+      //  fit: BoxFit.cover,
+      //  child: new InkWell(
+      //    onTap: (){},
+      //  )
+      // ),
       child: new InkWell(
        onTap: (){},
        child: new Image(
