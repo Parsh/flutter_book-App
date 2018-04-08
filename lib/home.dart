@@ -33,7 +33,9 @@ class Home extends StatelessWidget {
             //  )
             // ),
             child: new InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(context ,'detail/${book.title}');
+              },
               child: new Image(
                 image: new AssetImage(book.image),
                 fit: BoxFit.cover,
