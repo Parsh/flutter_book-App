@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'home.dart';
 
 void main() => runApp(new MyApp());
 
@@ -7,10 +8,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
      return new MaterialApp(
       title: "The Book App",
+      debugShowCheckedModeBanner: false,
       theme: new ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.yellow,
+        platform: TargetPlatform.android,
       ),
-      home: null,
+      home: new Home(),
     );
   }
 }
